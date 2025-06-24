@@ -1,13 +1,15 @@
-import { useState } from "react";
+import HomePage from "./landing_page/home/HomePage";
+import Navbar from "./landing_page/Navbar";
+import Footer from "./landing_page/Footer";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
     <>
-      <h2>Hello</h2>
+      <Navbar></Navbar>
+      <HomePage />
+      <Footer></Footer>
     </>
   );
-}
+};
 
 export default App;
