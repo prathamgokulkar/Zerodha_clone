@@ -5,9 +5,7 @@ import Footer from "./landing_page/Footer";
 const App = () => {
   return (
     <>
-      <Navbar></Navbar>
       <HomePage />
-      <Footer></Footer>
     </>
   );
 };

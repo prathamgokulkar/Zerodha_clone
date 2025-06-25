@@ -1,6 +1,43 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Inter", sans-serif;
+  line-height: 1.6;
   color: #424242;
+  background-color: #fff;
+}
+
+.nav-item {
+  margin-left: 40px !important;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #387ed1 !important;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #6c757d;
+  display: block;
+  font-size: 14px;
+}
+
+.footer-links:hover {
+  color: #387ed1;
+}
+
+.btn-primary {
+  background-color: #387ed1;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #2e6ab8;
 }
