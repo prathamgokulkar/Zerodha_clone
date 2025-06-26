@@ -1,0 +1,48 @@
+.support-section {
+  padding: 4rem 1rem;
+  background-color: #387ed1;
+  color: white;
+}
+
+.support-links a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  height: 50px;
+  padding: 0 45px 0 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.topic-links a {
+  display: block;
+  margin-top: 1rem;
+  font-size: smaller;
+}
+
+@media (min-width: 768px) {
+  .support-section {
+    padding: 6rem 4rem;
+  }
+}

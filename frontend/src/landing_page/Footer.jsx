@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="container-fluid border-top ">
-      <div className="row mt-5">
-        <div className="col">
+    <div className="container-fluid border-top">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 mt-5">
+        <div className="col-12 col-md-3 mb-4 d-flex flex-column align-items-start">
           <img src="/images/logo.svg" alt="Logo" style={{ width: "50%" }} />
           <p className="mt-3" style={{ fontSize: "13px" }}>
             &copy;2010 - 2025, Zerodha Broking Ltd.
@@ -12,7 +12,8 @@ const Footer = () => {
             All rights reserved.
           </p>
         </div>
-        <div className="col">
+
+        <div className="col-9 mb-4">
           <h6 className="footer-heading">Account</h6>
           <a href="" className="footer-links">
             Open demat account
@@ -47,7 +48,7 @@ const Footer = () => {
           </a>
           <br />
         </div>
-        <div className="col">
+        <div className="col mb-4">
           <h6>Support</h6>
           <a href="" className="footer-links">
             Contact us
@@ -82,7 +83,7 @@ const Footer = () => {
           </a>
           <br />
         </div>
-        <div className="col">
+        <div className="col mb-4">
           <h6>Company</h6>
           <a href="" className="footer-links">
             About
@@ -113,8 +114,8 @@ const Footer = () => {
           </a>
           <br />
         </div>
-        <div className="col">
-          <h6>Quter-links</h6>
+        <div className="col mb-4">
+          <h6>Outer-links</h6>
           <a href="" className="footer-links">
             Upcoming IPOs
           </a>
@@ -145,9 +146,10 @@ const Footer = () => {
           <br />
         </div>
       </div>
+
       <div
         className="footer-text mt-5"
-        style={{ fontSize: "10px", color: "#6c757d !important" }}
+        style={{ fontSize: "10px", color: "#6c757d" }}
       >
         <p>
           Zerodha Broking Ltd.: Member of NSE, BSE​ &​ MCX – SEBI Registration

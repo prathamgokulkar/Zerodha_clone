@@ -9,6 +9,17 @@ body {
   line-height: 1.6;
   color: #424242;
   background-color: #fff;
+  padding-top: 70px;
+}
+
+p {
+  white-space: normal;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+
+.navbar {
+  margin-bottom: 0 !important;
 }
 
 .nav-item {
@@ -38,6 +49,8 @@ body {
   background-color: #387ed1;
   border: none;
 }
+
 .btn-primary:hover {
-  background-color: #2e6ab8;
+  background-color: #0d3f7d !important;
+  transition: background-color 0.3s ease;
 }
