@@ -13,12 +13,14 @@ import SupportPage from "./landing_page/support/SupportPage.jsx";
 import NotFound from "./NotFound.jsx";
 import Navbar from "./landing_page/Navbar.jsx";
 import Footer from "./landing_page/Footer.jsx";
+import LoginPage from "./landing_page/signup/LoginPage.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <Navbar></Navbar>
     <Routes>
       <Route path="/" element={<HomePage />}></Route>
+      <Route path="/login" element={<LoginPage />}></Route>
       <Route path="/signup" element={<Signup />}></Route>
       <Route path="/about" element={<AboutPage />}></Route>
       <Route path="/product" element={<ProductPage />}></Route>

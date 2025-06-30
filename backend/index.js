@@ -9,11 +9,12 @@ const HoldingsModel = require("./model/HoldingsModel");
 const OrdersModel = require("./model/OrdersModel");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const cookieParser = require("cookie-parser");
+const bcrypt = require("bcryptjs");
+
+const authRoute = require("./Routes/AuthRoute");
 
 const app = express();
-
-app.use(cors());
-app.use(bodyParser.json());
 
 mongoose
   .connect(process.env.MONGO_URL, {
@@ -22,6 +23,18 @@ mongoose
   })
   .then(() => console.log("MongoDB connected successfully"))
   .catch((err) => console.error("MongoDB connection error:", err));
+
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "http://localhost:5174"],
+    credentials: true,
+  })
+);
+app.use(cookieParser());
+app.use(express.json());
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // app.get("/holdings", async (req, res) => {
 //   try {
@@ -179,6 +192,8 @@ mongoose
 //   }
 // });
 
+app.use("/", authRoute);
+
 app.get("/allHoldings", async (req, res) => {
   try {
     const holdings = await HoldingsModel.find({});
@@ -263,5 +278,4 @@ app.get("/allOrders", async (req, res) => {
 
 app.listen(port, () => {
   console.log("Server is running on port", port);
-  mongoose.connect(MONGO_URL);
 });
