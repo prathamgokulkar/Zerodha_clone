@@ -133,7 +133,11 @@ const WatchListActions = ({ uid }) => {
   const generalContext = useContext(GeneralContext);
 
   const handleBuyClick = () => {
-    generalContext.openBuyWindow(uid);
+    generalContext.openBuyWindow(uid, "BUY");
+  };
+
+  const handleSellClick = () => {
+    generalContext.openBuyWindow(uid, "SELL");
   };
 
   return (
@@ -153,6 +157,7 @@ const WatchListActions = ({ uid }) => {
           placement="top"
           arrow
           TransitionComponent={Grow}
+          onClick={handleSellClick}
         >
           <button className="sell">Sell</button>
         </Tooltip>
