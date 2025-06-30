@@ -14,7 +14,7 @@ const LoginPage = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8080/login",
+        "https://zerodha-clone-ivory.vercel.app/login",
         { email, password },
         { withCredentials: true }
       );
