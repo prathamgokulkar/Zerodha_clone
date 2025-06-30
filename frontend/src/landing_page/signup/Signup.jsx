@@ -25,7 +25,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/signup",
+        "https://zerodha-clone-ivory.vercel.app/signup",
         {
           email: form.email,
           username: form.username,
@@ -36,7 +36,9 @@ const Signup = () => {
       );
 
       if (response.data.success) {
-        navigate("/dashboard");
+        setTimeout(() => {
+          window.location.href = "http://localhost:5174/dashboard";
+        }, 1000);
       } else {
         setError(response.data.message || "Signup failed.");
         setShowAlert(true);

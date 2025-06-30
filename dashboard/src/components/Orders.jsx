@@ -6,7 +6,7 @@ const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:8080/allOrders")
+      .get("https://zerodha-clone-ivory.vercel.app/allOrders")
       .then((res) => setAllOrders(res.data))
       .catch((err) => console.error("Error fetching orders:", err));
   }, []);

@@ -6,10 +6,12 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/positions").then((res) => {
-      // console.log(res.data);
-      setAllPositions(res.data);
-    });
+    axios
+      .get("https://zerodha-clone-ivory.vercel.app/positions")
+      .then((res) => {
+        // console.log(res.data);
+        setAllPositions(res.data);
+      });
   });
 
   return (
