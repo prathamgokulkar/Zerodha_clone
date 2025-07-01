@@ -6,7 +6,7 @@ const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);
   useEffect(() => {
     axios
-      .get("https://zerodha-clone-ivory.vercel.app/allOrders")
+      .get("https://zerodha-clone-2-lc9e.onrender.com/allOrders")
       .then((res) => setAllOrders(res.data))
       .catch((err) => console.error("Error fetching orders:", err));
   }, []);

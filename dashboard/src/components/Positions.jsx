@@ -7,7 +7,7 @@ const Positions = () => {
 
   useEffect(() => {
     axios
-      .get("https://zerodha-clone-ivory.vercel.app/positions")
+      .get("https://zerodha-clone-2-lc9e.onrender.com/positions")
       .then((res) => {
         // console.log(res.data);
         setAllPositions(res.data);
