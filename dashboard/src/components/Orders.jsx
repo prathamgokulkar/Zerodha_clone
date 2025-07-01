@@ -12,38 +12,40 @@ const Orders = () => {
   }, []);
 
   return (
-    <div className="orders">
-      <div className="no-orders">
+    <div className="orders container mt-4">
+      <div className="no-orders row justify-content-center">
         {allOrders.length === 0 ? (
-          <div className="no-orders">
+          <div className="no-orders text-center col-12 col-md-8">
             <p>You haven't placed any orders today</p>
             <p>Get started using the wishlist</p>
-            <Link to="/" className="btn">
+            <Link to="/" className="btn btn-primary">
               Get started
             </Link>
           </div>
         ) : (
-          <div className="order-table">
-            <table>
-              <thead>
-                <tr>
-                  <th>Instrument</th>
-                  <th>Qty.</th>
-                  <th>Price</th>
-                  <th>Mode</th>
-                </tr>
-              </thead>
-              <tbody>
-                {allOrders.map((order, index) => (
-                  <tr key={index}>
-                    <td>{order.name}</td>
-                    <td>{order.qty}</td>
-                    <td>{order.price.toFixed(2)}</td>
-                    <td>{order.mode}</td>
+          <div className="order-table col-12">
+            <div className="table-responsive">
+              <table className="table table-bordered table-hover">
+                <thead className="thead-light">
+                  <tr>
+                    <th>Instrument</th>
+                    <th>Qty.</th>
+                    <th>Price</th>
+                    <th>Mode</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
+                </thead>
+                <tbody>
+                  {allOrders.map((order, index) => (
+                    <tr key={index}>
+                      <td>{order.name}</td>
+                      <td>{order.qty}</td>
+                      <td>{order.price.toFixed(2)}</td>
+                      <td>{order.mode}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
           </div>
         )}
       </div>

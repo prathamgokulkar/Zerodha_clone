@@ -21,6 +21,7 @@ ChartJS.register(
 
 export const options = {
   responsive: true,
+  maintainAspectRatio: false,
   plugins: {
     legend: {
       position: "top",
@@ -33,5 +34,20 @@ export const options = {
 };
 
 export function VerticalGraph({ data }) {
-  return <Bar options={options} data={data} />;
+  return (
+    <div className="container-fluid mb-4">
+      <div
+        className="p-2"
+        style={{
+          width: "100%",
+          minHeight: "300px",
+          maxHeight: "500px",
+          height: "400px",
+          overflowX: "auto",
+        }}
+      >
+        <Bar data={data} options={options} />
+      </div>
+    </div>
+  );
 }

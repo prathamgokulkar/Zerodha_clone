@@ -295,33 +295,125 @@ hr {
   height: 30px;
 }
 
+.menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .d-md-none {
+    display: block !important;
+  }
+
+  .d-md-flex {
+    display: none !important;
+  }
+}
+
+.menus ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menus li {
+  margin-right: 20px;
+}
+
+.menu {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.menu:hover {
+  color: #f56834;
+}
+
+.menu.selected {
+  color: #f56834;
+  font-weight: 500;
+}
+
 .profile {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  margin-left: 20px;
+  gap: 10px;
 }
 
-.profile .avatar {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  position: relative;
-  font-size: 0.7rem;
-  font-weight: 400;
-  color: rgb(221, 139, 221);
-  justify-content: center;
-  align-items: center;
-  border-radius: 100%;
-  text-align: center;
-  display: flex;
-  background: rgb(252, 229, 252);
-  margin-right: 8px;
+.avatar {
+  background-color: #f56834;
+  color: white;
+  padding: 8px;
+  border-radius: 50%;
+  font-weight: bold;
 }
 
-.profile .username {
-  font-size: 0.8rem;
-  font-weight: 300;
+.username {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.dropdown-toggle-mobile {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .dropdown-toggle-mobile {
+    display: block;
+  }
+}
+
+.dropdown-menu-custom {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 999;
+}
+
+.dropdown-menu-custom li {
+  list-style: none;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 0.9rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f6f6f6;
+}
+
+.dropdown-menu-custom hr {
+  border: none;
+  height: 1px;
+  background-color: #eee;
+  margin: 10px 0;
 }
 
 /* sudo selectors */
@@ -587,6 +679,12 @@ hr {
   justify-content: space-around;
 }
 
+@media (max-width: 768px) {
+  .indices-container {
+    display: none;
+  }
+}
+
 .nifty {
   flex-basis: 40%;
   display: flex;
@@ -639,6 +737,15 @@ hr {
   box-shadow: 0px 0px 4px 1px rgb(236, 235, 235);
   overflow-y: auto;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  .watchlist-container {
+    display: none;
+  }
+  .actions {
+    display: none;
+  }
 }
 
 .search-container {
@@ -840,4 +947,15 @@ hr {
 
 .action:hover {
   background-color: rgb(212, 212, 212);
+}
+
+/* Utility fallback if Bootstrap doesn't apply */
+.d-md-none {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .d-md-none {
+    display: block;
+  }
 }
