@@ -2,52 +2,62 @@ import React from "react";
 
 const Summary = () => {
   return (
-    <div className="container mt-4">
-      <div className="mb-4">
-        <h6 className="text-muted">Hi, User!</h6>
+    <>
+      <div className="username">
+        <h6>Hi, User!</h6>
         <hr className="divider" />
       </div>
 
-      <div className="section mb-4">
-        <p className="fw-semibold">Equity</p>
-        <div className="row">
-          <div className="col-12 col-md-6 mb-3 mb-md-0">
+      <div className="section">
+        <span>
+          <p>Equity</p>
+        </span>
+
+        <div className="data">
+          <div className="first">
             <h3>3.74k</h3>
-            <p className="text-muted">Margin available</p>
+            <p>Margin available</p>
           </div>
-          <div className="col-12 col-md-6">
+          <hr />
+
+          <div className="second">
             <p>
-              Margins used <span className="float-end">0</span>
+              Margins used <span>0</span>{" "}
             </p>
             <p>
-              Opening balance <span className="float-end">3.74k</span>
+              Opening balance <span>3.74k</span>{" "}
             </p>
           </div>
         </div>
         <hr className="divider" />
       </div>
 
-      <div className="section mb-4">
-        <p className="fw-semibold">Holdings (13)</p>
-        <div className="row">
-          <div className="col-12 col-md-6 mb-3 mb-md-0">
-            <h3 className="text-success">
-              1.55k <small className="text-success">+5.20%</small>
+      <div className="section">
+        <span>
+          <p>Holdings (13)</p>
+        </span>
+
+        <div className="data">
+          <div className="first">
+            <h3 className="profit">
+              1.55k <small>+5.20%</small>{" "}
             </h3>
-            <p className="text-muted">P&amp;L</p>
+            <p>P&L</p>
           </div>
-          <div className="col-12 col-md-6">
+          <hr />
+
+          <div className="second">
             <p>
-              Current Value <span className="float-end">31.43k</span>
+              Current Value <span>31.43k</span>{" "}
             </p>
             <p>
-              Investment <span className="float-end">29.88k</span>
+              Investment <span>29.88k</span>{" "}
             </p>
           </div>
         </div>
         <hr className="divider" />
       </div>
-    </div>
+    </>
   );
 };
 
