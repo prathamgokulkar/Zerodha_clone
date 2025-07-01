@@ -24,7 +24,24 @@ mongoose
   .then(() => console.log("MongoDB connected successfully"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
-app.use(cors("*"));
+const allowedOrigins = [
+  "http://localhost:5173", // local dev frontend
+  "https://zerodha-clone-frontend.vercel.app", // replace with your actual deployed frontend domain
+  "https://zerodha-clone-gbbk.vercel.app/",
+];
+
+app.use(
+  cors({
+    origin: function (origin, callback) {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
+    credentials: true,
+  })
+);
 
 app.use(cookieParser());
 app.use(express.json());

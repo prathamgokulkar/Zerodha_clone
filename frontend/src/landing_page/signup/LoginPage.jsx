@@ -22,7 +22,7 @@ const LoginPage = () => {
       if (res.data.success) {
         setAlertMsg("Login successful!");
         setTimeout(() => {
-          window.location.href = "http://localhost:5174/dashboard";
+          window.location.href = "https://zerodha-clone-gbbk.vercel.app";
         }, 1000);
       } else {
         setAlertMsg(res.data.message || "Login failed.");

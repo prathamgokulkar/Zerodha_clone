@@ -37,7 +37,8 @@ const Signup = () => {
 
       if (response.data.success) {
         setTimeout(() => {
-          window.location.href = "http://localhost:5174/dashboard";
+          window.location.href =
+            "https://zerodha-clone-gbbk.vercel.app/dashboard";
         }, 1000);
       } else {
         setError(response.data.message || "Signup failed.");
