@@ -11,10 +11,14 @@ const RightSection = ({ img, title, description, cta1, cta2 }) => {
             <div className="mt-3">
               {cta1 && (
                 <a href="#" className="me-4">
-                  {cta1} ➜
+                  {cta1} <i class="fa-solid fa-arrow-right"></i>
                 </a>
               )}
-              {cta2 && <a href="#">{cta2} ➜</a>}
+              {cta2 && (
+                <a href="#">
+                  {cta2} <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              )}
             </div>
           </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const headingStyle = {
@@ -16,8 +17,7 @@ const Hero = () => {
               <img
                 src="/images/homeHero.png"
                 alt="HeroImage"
-                className="img-fluid mx-auto d-block"
-                style={{ maxWidth: "800px" }}
+                className="img-fluid mx-auto d-block w-100"
               />
             </div>
             <h1 style={headingStyle}>Invest in everything</h1>
@@ -25,15 +25,17 @@ const Hero = () => {
               Online platform to invest in stocks, derivatives, mutual funds,
               ETFs, bonds, and more.
             </p>
-            <button
+            <Link
+              to="/signup"
               className="btn btn-primary fs-5 mt-3"
               style={{
                 padding: "10px 15px",
                 background: "#387ED1",
+                textDecoration: "none",
               }}
             >
               Sign up for free
-            </button>
+            </Link>
           </div>
         </div>
       </div>

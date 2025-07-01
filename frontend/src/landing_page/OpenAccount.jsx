@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const OpenAccount = () => {
   return (
     <div className="heading mt-5 text-center">
@@ -6,16 +7,17 @@ const OpenAccount = () => {
         Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O
         trades.
       </p>
-      <button
-        className="btn btn-primary fs-5 mt-3 mb-5"
+      <Link
+        to="/signup"
+        className="btn btn-primary fs-5 mt-3"
         style={{
           padding: "10px 15px",
-          margin: "25px 0 0",
           background: "#387ED1",
+          textDecoration: "none",
         }}
       >
         Sign up for free
-      </button>
+      </Link>
     </div>
   );
 };

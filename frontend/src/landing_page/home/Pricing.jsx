@@ -16,7 +16,7 @@ const Pricing = () => {
               className="mt-4 d-inline-block"
               style={{ textDecoration: "none" }}
             >
-              See pricing ➜
+              See pricing <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
 

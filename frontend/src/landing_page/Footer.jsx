@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="container-fluid border-top">
@@ -15,134 +15,134 @@ const Footer = () => {
 
         <div className="col-9 mb-4">
           <h6 className="footer-heading">Account</h6>
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Open demat account
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Minor demat account
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             NRI demat account
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Commodity
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Dematerialisation
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Fund transfer
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             MTF
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Referral program
-          </a>
+          </Link>
           <br />
         </div>
         <div className="col mb-4">
           <h6>Support</h6>
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Contact us
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Support portal
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             How to file a complaint?
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Status of your complaints
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Bulletin
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Circular
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Z-Connect blog
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Downloads
-          </a>
+          </Link>
           <br />
         </div>
         <div className="col mb-4">
           <h6>Company</h6>
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             About
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Philosophy
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Press & media
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Careers
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Zerodha Cares (CSR)
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Zerodha.tech
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Open source
-          </a>
+          </Link>
           <br />
         </div>
         <div className="col mb-4">
           <h6>Outer-links</h6>
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Upcoming IPOs
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Brokerage charges
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Market holidays
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Economic calendar
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Calculators
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Markets
-          </a>
+          </Link>
           <br />
-          <a href="" className="footer-links">
+          <Link to="" className="footer-links">
             Sectors
-          </a>
+          </Link>
           <br />
         </div>
       </div>

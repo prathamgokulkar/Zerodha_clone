@@ -64,14 +64,14 @@ const Stats = () => {
                 className="mx-3 d-inline-block"
                 style={{ textDecoration: "none" }}
               >
-                Explore our products ➜
+                Explore our products <i class="fa-solid fa-arrow-right"></i>
               </a>
               <a
                 href="#"
                 className="mx-3 d-inline-block"
                 style={{ textDecoration: "none" }}
               >
-                Try Kite demo ➜
+                Try Kite demo <i className="fa-solid fa-arrow-right"></i>
               </a>
             </div>
           </div>

@@ -1,7 +1,5 @@
 import React, { useState, useContext } from "react";
 
-import axios from "axios";
-
 import GeneralContext from "./GeneralContext";
 
 import { Tooltip, Grow } from "@mui/material";
@@ -74,7 +72,7 @@ const WatchList = () => {
   // };
 
   return (
-    <div className="watchlist-container">
+    <div className="watchlist-container d-none d-md-block">
       <div className="search-container">
         <input
           type="text"

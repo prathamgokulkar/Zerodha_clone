@@ -1,5 +1,4 @@
-import React from "react";
-
+import { Link } from "react-router-dom";
 const Universe = () => {
   return (
     <div className="container universe-container px-5 my-5">
@@ -97,16 +96,19 @@ const Universe = () => {
             mis-selling. Sign up for free
           </p>
         </div>
-        <button
-          className="btn btn-primary d-block mx-auto fs-5 mt-3"
-          style={{
-            padding: "10px 15px",
-            background: "#387ED1",
-            width: "200px",
-          }}
-        >
-          Sign up for free
-        </button>
+        <div className="d-flex justify-content-center">
+          <Link
+            to="/signup"
+            className="btn btn-primary fs-5 mt-3"
+            style={{
+              padding: "10px 15px",
+              background: "#387ED1",
+              textDecoration: "none",
+            }}
+          >
+            Sign up for free
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleNavbar = () => setIsOpen(!isOpen);
+
+  const closeNavbar = () => setIsOpen(false);
+
   return (
     <nav className="navbar navbar-expand-lg border-bottom fixed-top bg-white">
       <div className="container">
@@ -22,6 +28,7 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
+          onClick={toggleNavbar}
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
@@ -31,35 +38,62 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <div
+          className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active" to="/signup">
+              <Link
+                className="nav-link active"
+                onClick={closeNavbar}
+                to="/signup"
+              >
                 Signup
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/login">
+              <Link
+                className="nav-link active"
+                onClick={closeNavbar}
+                to="/login"
+              >
                 Login
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/about">
+              <Link
+                className="nav-link active"
+                onClick={closeNavbar}
+                to="/about"
+              >
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/product">
+              <Link
+                className="nav-link active"
+                onClick={closeNavbar}
+                to="/product"
+              >
                 Product
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/pricing">
+              <Link
+                className="nav-link active"
+                onClick={closeNavbar}
+                to="/pricing"
+              >
                 Pricing
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link active" to="/support">
+              <Link
+                className="nav-link active"
+                onClick={closeNavbar}
+                to="/support"
+              >
                 Support
               </Link>
             </li>

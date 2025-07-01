@@ -24,7 +24,7 @@ const Education = () => {
               className="mt-3 d-inline-block"
               style={{ textDecoration: "none" }}
             >
-              Varsity ➜
+              Varsity <i class="fa-solid fa-arrow-right"></i>
             </a>
             <p className="mt-5">
               TradingQ&A, the most active trading and investment community in
@@ -35,7 +35,7 @@ const Education = () => {
               className="mt-3 d-inline-block"
               style={{ textDecoration: "none" }}
             >
-              TradingQ&A ➜
+              TradingQ&A <i class="fa-solid fa-arrow-right"></i>
             </a>
           </div>
         </div>
