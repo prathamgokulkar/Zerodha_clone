@@ -26,7 +26,10 @@ mongoose
 
 app.use(
   cors({
-    origin: "https://zerodha-clone-wku6.vercel.app",
+    origin: [
+      "https://zerodha-clone-wku6.vercel.app",
+      "https://zerodha-clone-gbbk.vercel.app",
+    ],
     credentials: true,
   })
 );
