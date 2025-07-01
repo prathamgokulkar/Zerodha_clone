@@ -25,7 +25,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "https://zerodha-clone-ivory.vercel.app/signup",
+        "https://zerodha-clone-2-lc9e.onrender.com/signup",
         {
           email: form.email,
           username: form.username,

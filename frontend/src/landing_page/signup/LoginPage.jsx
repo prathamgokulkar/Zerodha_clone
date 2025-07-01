@@ -14,7 +14,7 @@ const LoginPage = () => {
 
     try {
       const res = await axios.post(
-        "https://zerodha-clone-ivory.vercel.app/login",
+        "https://zerodha-clone-2-lc9e.onrender.com/login",
         { email, password },
         { withCredentials: true }
       );
