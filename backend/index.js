@@ -19,6 +19,7 @@ const app = express();
 app.use(
   cors({
     origin: [
+      "http://localhost:5173",
       "http://localhost:5174",
       "https://zerodha-clone-wku6.vercel.app",
       "https://zerodha-clone-gbbk.vercel.app",
