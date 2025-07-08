@@ -6,12 +6,10 @@ const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://zerodha-clone-2-lc9e.onrender.com/positions")
-      .then((res) => {
-        // console.log(res.data);
-        setAllPositions(res.data);
-      });
+    axios.get("https://import.meta.env.VITE_API_URL/positions").then((res) => {
+      // console.log(res.data);
+      setAllPositions(res.data);
+    });
   });
 
   return (

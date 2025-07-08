@@ -25,7 +25,7 @@ const Signup = () => {
 
     try {
       const response = await axios.post(
-        "https://zerodha-clone-2-lc9e.onrender.com/signup",
+        "https://import.meta.env.VITE_API_URL/signup",
         {
           email: form.email,
           username: form.username,

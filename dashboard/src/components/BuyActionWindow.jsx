@@ -10,7 +10,7 @@ const BuyActionWindow = () => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleActionClick = () => {
-    axios.post("https://zerodha-clone-2-lc9e.onrender.com/newOrder", {
+    axios.post("https://import.meta.env.VITE_API_URL/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

@@ -4,6 +4,8 @@ const bcrypt = require("bcryptjs");
 
 module.exports.Signup = async (req, res, next) => {
   try {
+    console.log("SIGNUP BODY:", req.body); // ✅ ADD THIS LINE
+
     const { email, password, username, createdAt } = req.body;
     const existingUser = await User.findOne({ email });
     if (existingUser) {

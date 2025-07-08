@@ -16,17 +16,10 @@ const authRoute = require("./Routes/AuthRoute");
 
 const app = express();
 
-mongoose
-  .connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("MongoDB connected successfully"))
-  .catch((err) => console.error("MongoDB connection error:", err));
-
 app.use(
   cors({
     origin: [
+      "http://localhost:5174",
       "https://zerodha-clone-wku6.vercel.app",
       "https://zerodha-clone-gbbk.vercel.app",
     ],
@@ -37,8 +30,18 @@ app.use(
 app.use(cookieParser());
 app.use(express.json());
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+app.use(express.urlencoded({ extended: true }));
+
+mongoose
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("MongoDB connected successfully"))
+  .catch((err) => console.error("MongoDB connection error:", err));
+
+app.use("/", authRoute);
 
 // app.get("/holdings", async (req, res) => {
 //   try {
@@ -195,8 +198,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //     res.status(500).send("Error saving positions");
 //   }
 // });
-
-app.use("/", authRoute);
 
 app.get("/allHoldings", async (req, res) => {
   try {

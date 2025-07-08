@@ -7,7 +7,7 @@ const Holdings = () => {
 
   useEffect(() => {
     axios
-      .get("https://zerodha-clone-2-lc9e.onrender.com/allHoldings")
+      .get("https://import.meta.env.VITE_API_URL/allHoldings")
       .then((res) => setAllHoldings(res.data));
   }, []);
 

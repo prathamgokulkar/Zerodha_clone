@@ -14,7 +14,7 @@ const LoginPage = () => {
 
     try {
       const res = await axios.post(
-        "https://zerodha-clone-2-lc9e.onrender.com/login",
+        "import.meta.env.VITE_API_URL/login",
         { email, password },
         { withCredentials: true }
       );
