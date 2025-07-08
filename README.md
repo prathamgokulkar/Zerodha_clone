@@ -4,7 +4,7 @@ A full-stack clone of [Zerodha](https://zerodha.com) — India's leading stock t
 
 ## 🚀 Live Demo
 
-🔗 [Visit the Live Site](https://zerodha-clone-wku6.vercel.app)
+🔗 [Visit the Live Site](https://zerodha-clone-fv2o.vercel.app)
 
 > Backend: Hosted on [Render](https://render.com) or any Node.js-friendly service  
 > Frontend: Deployed via [Vercel](https://vercel.com)
@@ -27,12 +27,14 @@ A full-stack clone of [Zerodha](https://zerodha.com) — India's leading stock t
 ## 🛠 Tech Stack
 
 ### 🔹 Frontend
+
 - [React](w)
 - [React Router](w)
 - [Axios](w)
 - [Bootstrap CSS](w)
 
 ### 🔹 Backend
+
 - [Node.js](w)
 - [Express.js](w)
 - [MongoDB](w)
