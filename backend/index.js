@@ -21,7 +21,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "http://localhost:5174",
-      "https://zerodha-clone-fv2o.vercel.app/login",
+      "https://zerodha-clone-fv2o.vercel.app",
       "https://zerodha-clone-gbbk.vercel.app",
     ],
     credentials: true,
