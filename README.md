@@ -6,8 +6,7 @@ A full-stack clone of [Zerodha](https://zerodha.com) — India's leading stock t
 
 🔗 [Visit the Live Site](https://zerodha-clone-fv2o.vercel.app)
 
-> Backend: Hosted on [Render](https://render.com) or any Node.js-friendly service  
-> Frontend: Deployed via [Vercel](https://vercel.com)
+> Frontend and Backend: Deployed via [Vercel](https://vercel.com)
 
 ---
 
